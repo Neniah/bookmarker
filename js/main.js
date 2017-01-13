@@ -31,3 +31,14 @@ function saveBookmark(e){
 
   e.preventDefault();
 }
+
+// Fetch bookmarks
+function fetchBookmarks(){
+  var bookmarks = JSON.parse(localStorage.getItem('bookmarks'));
+
+  //Get output id
+  var bookmarksResults = document.getElementById('bookmarksResults');
+
+  //Build output
+  bookmarksResults.innerHTML = '';
+}
